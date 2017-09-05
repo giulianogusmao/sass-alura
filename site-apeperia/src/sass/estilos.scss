@@ -1,3 +1,6 @@
+@import './_imports.scss';
+
+
 /** Geral **/
 body {
   font-family: "Roboto Slab", serif;
@@ -27,7 +30,7 @@ h2 {
 
 /** Header **/
 header {
-  border-top: 5px solid #66DDDD;
+  border-top: 5px solid $cor-primaria;
   background: rgba(30, 44, 53, 0.8);
   height: 90px;
   width: 100%;
@@ -91,12 +94,11 @@ header .container {
 
 .destaque button {
   margin-top: 1em;
-  background: #66DDDD;
+  background: $cor-primaria;
   border: 0;
   padding: .6em;
   font-size: 1.2em;
-  -webkit-border-radius: 0.3em;
-  border-radius: 0.3em;
+  @include borda-arredondada;
   box-shadow: 0 2px 6.65px 0.35px rgba(0, 0, 0, 0.3);
   font-weight: bold;
 }
@@ -181,7 +183,7 @@ header .container {
 .plano h3 {
   color: #fff;
   font-size: 1.8em;
-  background: #66DDDD;
+  background: $cor-primaria;
   text-align: center;
   height: 2em;
   padding-top: .6em;
@@ -190,7 +192,7 @@ header .container {
 
 .plano div {
   text-align: center;
-  color: #66DDDD;
+  color: $cor-primaria;
   font-size: 2.75em;
 }
 
@@ -215,14 +217,13 @@ header .container {
 }
 
 .plano button {
-  background: #66DDDD;
+  background: $cor-primaria;
   border: 0;
   color: #fff;
   width: 210px;
   height: 38px;
   font-size: 1.2em;
-  -webkit-border-radius: 0.3em;
-  border-radius: 0.3em;
+  @include borda-arredondada;
   box-shadow: 0 2px 6.65px 0.35px rgba(0, 0, 0, 0.3);
   margin-left: 2em;
 }
@@ -306,21 +307,19 @@ textarea {
   width: 100%;
   margin-bottom: .8em;
   padding: 4px 8px;
-  -webkit-border-radius: 0.3em;
-  border-radius: 0.3em;
+  @include borda-arredondada;
   border: 2px solid #ccc;
 }
 
 .contato button {
   margin: 0 auto;
-  background: #66DDDD;
+  background: $cor-primaria;
   border: 0;
   color: #fff;
   width: 210px;
   height: 38px;
   font-size: 1.2em;
-  -webkit-border-radius: 0.3em;
-  border-radius: 0.3em;
+  @include borda-arredondada;
   box-shadow: 0 2px 6.65px 0.35px rgba(0, 0, 0, 0.3);
 }
 
