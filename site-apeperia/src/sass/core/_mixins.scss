@@ -1,4 +1,5 @@
+@import './variables';
+
 @mixin borda-arredondada {
-  -webkit-border-radius: $raio-borda;
   border-radius: $raio-borda;
 }
