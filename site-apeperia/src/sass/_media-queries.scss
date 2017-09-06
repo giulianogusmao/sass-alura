@@ -1,4 +1,4 @@
-@media (max-width: 980px) {
+@media #{$mq-mobile} {
 	.container {
 		width: 90%;
 	}

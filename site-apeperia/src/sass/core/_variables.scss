@@ -1,2 +1,6 @@
 $cor-primaria: #c34d4a;
 $raio-borda: .3em;
+
+
+$screen-mobile: 980px;
+$mq-mobile: '(max-width: #{$screen-mobile})';

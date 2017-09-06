@@ -18,7 +18,9 @@ gulp.task('browserSync', function () {
         },
         // port: 8080,
         // startPath: 'index.html',
-    })
+    });
+
+    gulp.watch('./*.html').on('change', browserSync.reload);
 });
 
 gulp.task('clean', () => {
