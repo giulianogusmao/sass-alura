@@ -1,5 +1,8 @@
 @import './core/imports';
 
+$sprite-spacing: 5px;
+@import '../imagens/sprite/*.png';
+
 @import './partials/estilos';
 @import './media-queries';
 @import './normalize';

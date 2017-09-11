@@ -4,9 +4,11 @@
   "description": "",
   "main": "gulpfile.js",
   "scripts": {
-    "start": "npm run gulp | npm run server",
+    "start": "npm run gulp build-sass | npm run server",
+    "start-compass": "npm run gulp build-compass | npm run server-compass",
     "gulp": "gulp",
     "server": "gulp watch",
+    "server-compass": "gulp watch-compass",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
