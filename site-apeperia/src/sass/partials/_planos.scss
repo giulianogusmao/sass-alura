@@ -67,17 +67,12 @@
   margin-left: 2em;
 }
 
+// criando sprite
+$sprite-spacing: 5px;
+@import 'sprite/*.png';
 @include all-sprite-sprites;
+
 .sprite-icone-check, .sprite-icone-x {
-  // background: url(../imagens/sprite.png) no-repeat;
   width: 18px;
   height: 18px;
 }
-
-// .icone-check {
-//   background-position: 0 0;
-// }
-
-// .icone-x {
-//   background-position: -33px -5px;
-// }

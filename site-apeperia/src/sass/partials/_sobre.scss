@@ -22,8 +22,13 @@
   }
 }
 
+$plataformas-spacing: 5px;
+@import 'plataformas/*.png';
+
 .plataformas {
   padding: 0;
+
+  @include all-plataformas-sprites;
 
   li {
     display: inline-block;
@@ -35,20 +40,21 @@
     background-position: center;
     margin: 1em 1.5em 0 0;
 
-    &:nth-child(1) {
-      background-image: url(../imagens/logo-apple.png);
-    }
 
-    &:nth-child(2) {
-      background-image: url(../imagens/logo-android.png);
-    }
+    // &:nth-child(1) {
+    //   background-image: url(../imagens/logo-apple.png);
+    // }
 
-    &:nth-child(3) {
-      background-image: url(../imagens/logo-windows.png);
-    }
+    // &:nth-child(2) {
+    //   background-image: url(../imagens/logo-android.png);
+    // }
 
-    &:nth-child(4) {
-      background-image: url(../imagens/logo-blackberry.png);
-    }
+    // &:nth-child(3) {
+    //   background-image: url(../imagens/logo-windows.png);
+    // }
+
+    // &:nth-child(4) {
+    //   background-image: url(../imagens/logo-blackberry.png);
+    // }
   }
 }
